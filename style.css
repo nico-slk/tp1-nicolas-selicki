@@ -1,0 +1,602 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  color: #1c1c1c;
+  list-style: none;
+  overflow: visible;
+}
+
+body {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #edf0f2;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  object-fit: cover;
+}
+
+.white-shadow {
+  box-shadow: -5px -5px 8px 0px rgb(255, 255, 255, 1);
+  width: 100%;
+  height: 100%;
+}
+
+.black-shadow {
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+}
+
+@media screen {
+
+
+  #header {
+    padding: 10px;
+  }
+
+  #header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+
+  }
+
+  #u-list {
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+  }
+
+  .nav-list-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 30px;
+    font-size: 12px;
+    font-weight: 600;
+
+  }
+
+  #main {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 10px;
+    padding-bottom: 100px;
+    margin-bottom: 50px;
+    border-bottom: solid 1px rgb(177, 177, 177, 0.3);
+  }
+
+  .article_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  #personal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    padding-right: 70px;
+  }
+
+  #personal-presentation-title {
+    margin-bottom: 25px;
+    font-size: 48px;
+  }
+
+  #title-name {
+    color: #ff0080;
+  }
+
+  #personal-presentation-subtitle {
+    margin-bottom: 25px;
+    font-size: 36px;
+  }
+
+  #personal-presentation-text {
+    font-size: 12px;
+    margin-bottom: 80px;
+  }
+
+  #competencias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    font-size: 24px;
+  }
+
+  .competencias-list-item {
+    margin-right: 15px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .list-item-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 7px;
+  }
+
+  .competencias-title {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  #image-container {
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #personal-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .features-card {
+    width: 30%;
+    margin: 30px 0;
+  }
+
+  .what-i-do {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .section-head-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-head-pre-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #ff0080;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .section-head-title {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+
+  .my-portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-content {
+    padding: 60px 40px 80px 40px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(160deg, rgba(217, 217, 217, 1) 0%, rgba(227, 225, 225, 1) 6%, rgba(237, 240, 242, 1) 100%);
+    border-radius: 10px;
+    height: 100%;
+  }
+
+  .card-icon {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .pink-icon {
+    color: #ff0080;
+  }
+
+  .card-title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .card-text {
+    font-size: 12px;
+  }
+
+  .card-content-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .portfolio-card-content {
+    padding: 20px;
+  }
+
+  .card-portfolio-pre-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #ff0080;
+    text-transform: uppercase;
+  }
+
+  .card-portfolio-pre-number {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .card-portfolio-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+
+  .card-image-container {
+    height: 150px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+  }
+
+  .card-portfolio-image {
+    height: 100%;
+    width: 100%;
+  }
+
+  #resume-nav {
+    width: 100%;
+    height: 80px;
+  }
+
+  #resume-nav-ul {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(160deg, rgba(217, 217, 217, 1) 0%, rgba(227, 225, 225, 1) 6%, rgba(237, 240, 242, 1) 100%);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  }
+
+  .border-rad-15 {
+    border-radius: 15px;
+  }
+
+  #education {
+    margin-right: 4%;
+  }
+
+  .resume-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-weight: 600;
+  }
+
+  .resume-exp-edu {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .exp-edu-date {
+    color: #ff0080;
+    margin-top: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .exp-edu-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .column-item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .column-timeline {
+    width: 10%;
+  }
+
+  .column-card {
+    width: 90%;
+    margin-bottom: 50px;
+    border-radius: 7px;
+    background: linear-gradient(160deg, rgba(217, 217, 217, 1) 0%, rgba(227, 225, 225, 1) 6%, rgba(237, 240, 242, 1) 100%);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+
+  }
+
+  .column-card-content {
+    padding: 30px 20px;
+  }
+
+  .column-card-organization {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .organization-name {
+    font-size: 12px;
+    font-weight: 600;
+    color: #838383;
+  }
+
+  .organization {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .price-btn {
+    border-radius: 7px;
+    background: linear-gradient(160deg, rgba(217, 217, 217, 1) 0%, rgba(227, 225, 225, 1) 6%, rgba(237, 240, 242, 1) 100%);
+  }
+
+  .price-text {
+    margin: 10px 20px;
+    color: #ff0080;
+    font-weight: 600;
+  }
+
+  .resume-card-description {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 40px;
+    color: #5f5f5f;
+  }
+
+  #contact-information {
+    width: 37%;
+    border-radius: 15px;
+    background: linear-gradient(160deg, rgba(217, 217, 217, 1) 0%, rgba(227, 225, 225, 1) 6%, rgba(237, 240, 242, 1) 100%);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  }
+
+  #contact-information>.white-shadow {
+    box-shadow: -5px -5px 8px 0px rgb(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 15px;
+  }
+
+  #contact-form {
+    width: 60%;
+    border-radius: 15px;
+    text-transform: uppercase;
+    background: linear-gradient(160deg, rgba(217, 217, 217, 1) 0%, rgba(227, 225, 225, 1) 6%, rgba(237, 240, 242, 1) 100%);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  }
+
+  #contact-form>.white-shadow {
+    box-shadow: -5px -5px 8px 0px rgb(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 15px;
+  }
+
+  #subject,
+  #email,
+  #number,
+  #name {
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 7px;
+    border: solid 1px #edf0f2;
+    padding: 4px;
+  }
+
+  #contact-form label {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  #contact-image-container {
+    margin-bottom: 20px;
+  }
+
+  #contact-image {
+    height: 250px;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  #contact-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  #contact-text {
+    margin-bottom: 20px;
+  }
+
+  #contact-find-with {
+    margin-top: 20px;
+  }
+
+  .letter-pacing-0 {
+    letter-spacing: 0;
+  }
+
+  #name-and-number-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #name-and-number-input>.label-input-container {
+    width: 45%;
+  }
+
+  .label-input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  #your-message {
+    border-radius: 7px;
+    margin-top: 10px;
+    border: solid 1px #edf0f2;
+    padding: 4px;
+  }
+
+  #contact-btn {
+    background-color: #ff0080;
+    font-size: 12px;
+    color: white;
+    height: 50px;
+    border-radius: 7px;
+    border: solid 1px #ff0080;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  }
+
+
+  @media (max-width: 960px) {
+    .displayed-big {
+      display: none;
+      width: 0px;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .displayed-middle {
+      display: none;
+      width: 0px;
+    }
+
+    body {
+      margin: 0 10px;
+    }
+
+    #personal-info {
+      padding-right: 0;
+      width: 100%;
+    }
+
+    #image-container {
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+
+    .features-card {
+      width: 48%;
+    }
+
+    .resume-exp-edu {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+
+  @media (max-width: 560px) {
+    .displayed-small {
+      display: none;
+      width: 0px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .displayed-extra-small {
+      display: none;
+      width: 0px;
+    }
+
+    .white-shadow {
+      border-radius: 15px;
+    }
+
+    .section-head-pre-title {
+      font-size: 12px;
+    }
+
+    .section-head-title {
+      font-size: 36px;
+    }
+
+    .article_container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .features-card {
+      width: 100%;
+    }
+
+    .card-content {
+      padding: 30px 30px 40px 30px;
+      border-radius: 15px;
+      height: 100%;
+    }
+
+    .resume-list-item {
+      font-size: 12px;
+      text-align: center;
+    }
+
+    #contact-information {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    #contact-form {
+      width: 100%;
+    }
+  }
+
+}
