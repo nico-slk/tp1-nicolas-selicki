@@ -165,16 +165,53 @@ img {
     object-fit: contain;
   }
 
-  .features-card {
-    width: 30%;
-    margin: 30px 0;
+  .section-head {
+    width: 100%;
   }
 
-  .what-i-do {
+  .features-card {
+    width: 30%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 20px;
+    margin-left: 10px;
+    flex: 1 0 auto;
+  }
+
+  #slider {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  #slider-content {
+    /* width: 100vw; */
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+
+  .slider-item {
+    width: 400px;
+  }
+
+  #what-i-do {
+    justify-content: center;
+    align-items: center;
+  }
+
+  #back-button,
+  #forward-button {
+    border: 0px;
+    height: 50px;
+    width: 30px;
+  }
+
+  .f-arrow-icon,
+  .b-arrow-icon {
+    font-size: 48px;
+    color: #ff0080;
   }
 
   .section-head-container {
@@ -272,6 +309,17 @@ img {
   .card-portfolio-image {
     height: 100%;
     width: 100%;
+  }
+
+  .know-more {
+    background-color: #ff0080;
+    font-size: 12px;
+    color: white;
+    width: 100px;
+    height: 44px;
+    border-radius: 7px;
+    border: solid 1px #ff0080;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
   }
 
   #resume-nav {
@@ -488,6 +536,14 @@ img {
     margin-top: 10px;
     border: solid 1px #edf0f2;
     padding: 4px;
+  }
+
+  #success-message {
+    display: none;
+    color: rgb(0, 167, 0);
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 600;
   }
 
   #contact-btn {
